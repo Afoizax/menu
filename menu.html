@@ -1,0 +1,74 @@
+<html>
+ <link href="menuc.css" rel="stylesheet">
+    <head>
+        <body>
+            <h1>Bienvenue</h1>
+            <br>
+        </body>
+        <body>
+            <h2>Choisissez une entrée, un plat et un dessert.</h2>
+            <br>
+            <br>
+            <br>
+        </body>
+        <body>
+            <div class="wrap">
+              <div class="entree">
+                <h3>Les Entrées</h3>
+                <div class='one'>
+                    <img id='entree1' onclick="editPrice(this.id)" src="images/entree1.png"/>
+                    <input name="product" type="checkbox" value="5" onclick="totalgg()"/>
+                    <p>5$</p>
+                </div>
+                <div class='two'>
+                    <img onclick="editPrice()" src="images/entree2.png"/>
+                    <input name="product" type="checkbox" value="6" id='entree2' onclick="totalgg()"/>6$
+                </div>
+                <div class='three'>
+                    <img onclick="editPrice()" src="images/entree3.png"/>
+                    <input name="product" type="checkbox" value="7" id='entree3' onclick="totalgg()"/>7$
+                </div>
+                <br>
+              </div>
+              <div class="plat">
+                <h3>Les Plats</h3>
+                <div class='four'>
+                    <img onclick="editPrice()" src="images/plat1.png"/>
+                    <input name="product" type="checkbox" value="13" id='plat1' onclick="totalgg()"/>13$
+                </div>
+                <div class='five'>
+                    <img onclick="editPrice()" src="images/plat2.png"/>
+                    <input name="product" type="checkbox" value="14" id='plat2' onclick="totalgg()"/>14$
+                </div>
+                <div class='six'>
+                    <img onclick="editPrice()" src="images/plat3.png"/>
+                    <input name="product" type="checkbox" value="15" id='plat3' onclick="totalgg()"/>15$
+                </div>
+                <br>
+              </div>
+              <div class="dessert">
+                <h3>Les Desserts</h3>
+                <div class='seven'>
+                    <img onclick="editPrice()" src="images/dessert2.png"/>
+                    <input name="product" type="checkbox" value="8" id='dessert1' onclick="totalgg()"/>8$
+                </div>
+                <div class='eight'>
+                    <img onclick="editPrice()" src="images/dessert3.png"/>
+                    <input name="product" type="checkbox" value="9" id='dessert2' onclick="totalgg()"/>9$
+                </div>
+                <div class='nine'>
+                    <img onclick="editPrice()" src="images/dessert4.png"/>
+                    <input name="product" type="checkbox" value="10" id='dessert3' onclick="totalgg()"/>10$
+                </div>
+              </div>
+              <div class="total">
+                  <h3>Total: </h3>
+                  <div id='number'>
+                      <input type="text" size="12" value="0" id='total' readonly/>
+                  </div>
+              </div>
+            </div>
+         <script type="text/javascript" src="menuj.js"></script>
+        </body>
+    </head>
+</html>
